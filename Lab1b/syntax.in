@@ -1,0 +1,21 @@
+program = "inizio" cmpdstmt “;”
+decllist = declaration | declaration "new line" decllist
+declaration = identifier
+arraydecl = "listo" "[" nr "]" 
+type  = “” | arraydecl
+cmpdstmt = "begino" stmtlist "endo"
+stmtlist = stmt | stmt ";” “new line" stmtlist
+stmt = simplstmt | structstmt
+simplstmt = assignstmt | iostmt
+assignstmt = identifier "-=-" expression “;”
+mathematical_sign = “-+-“ | “---" | “-*-“ | “-/-“ | “-%-“  
+expression = expression mathematical_sign term | term
+term = expression | identifier
+factor = "[" expression "]" | IDENTIFIER
+iostmt = "reado" | “writeo" | “printo” "[" identifier "]"
+structstmt = cmpdstmt | ifstmt | whilestmt
+ifstmt = "ifo" “[” condition “]” "{" stmt "elso" “{” stmt “}” “}”
+whilestmt = "whileo" condition “{“ stmt “}”
+forstmt = “foro” “[” “identfier” “ino” (cum se face forul aici?)   
+condition = expression relation expression
+relation_sign = "<" | "<=" | "=" | "<>" | ">=" | ">"
