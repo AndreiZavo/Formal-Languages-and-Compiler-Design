@@ -1,0 +1,57 @@
+Alphabet:
+a. All upper (A-Z) and lowercase letters (a-z) of the standard English alphabet
+b. Underline character '_'
+c. Decimal digits (0-9);
+
+a. Special symbols, representing:
+
+- operators 
+	Arithmetic:  -+-, ---, -*-, -/-, -%-  
+	Assignment: -=- 
+	Relation: -<-, ->-, -<=, ->=, -<>- 
+	Logical:  -==- ,-!-, -!=-, -&&-, -ando-, -||-, -oro-
+	Incrementation and decrementation: -++-, ----
+- separators: 
+	() 
+	[ ] 
+	{ } 
+ 	;  
+	space 
+	tab 
+	newline
+
+- reserved words:
+	wilo 
+	elso 
+	ifo 
+	ofo 
+	reado 
+	writo 
+	furo 
+	ando 
+	oro
+	listo
+	defo
+	inizio
+	breako
+	returno
+	begino
+	enzo
+
+b. identifiers
+    identifier = letter | letter{letter}{digit}
+    letter = "A" | "B" | . .. | "Z" | “a” | “b” |  .. | “z”
+   non_zero_digit = "1" |...| "9"
+   zero_digit = “0”
+   symbol = “$”
+c. constants
+1.integer - rule:
+        integer = "0" | [ "+" | "-"] non-zero {digit} 
+        digit = non-zero | "0"
+        non-zero = "1" | "2" | ... | "9"
+2.character
+    character =letter | digit  (nu mai stiu daca trebuie in single quotes)
+3.string
+      constchar = string (si nici aici daca trebuie in double quotes)
+      string =char {string}
+      char =letter | digit
