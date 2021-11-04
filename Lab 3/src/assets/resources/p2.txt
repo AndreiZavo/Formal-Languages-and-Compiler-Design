@@ -1,0 +1,5 @@
+word -=- "poco loco" __
+if [ 'a' in word ] {
+returno true __
+}
+returno false __

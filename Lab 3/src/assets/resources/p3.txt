@@ -1,0 +1,8 @@
+rez -=- 0 __
+listuta -=- [ 1, 2, 3, 4, 5 ] __
+foro i in listuta {
+if [ i -%- 2 -=- 0 ] {
+rez -+=- 1
+}
+}
+returno rez __

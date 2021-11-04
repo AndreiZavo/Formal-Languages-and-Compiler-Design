@@ -1,0 +1,8 @@
+n -=- inputo["Choose number" ] __
+rez -=- 0 __
+wile [ n ->- 0 ] {
+dig  -=- n  -%- 10 __
+rez  -+=-  dig __
+n  -/=- 10 __
+}
+printo[ rez ] __

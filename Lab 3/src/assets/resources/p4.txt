@@ -1,0 +1,8 @@
+8n -=- inputo [ “Choose a number” ] __
+rez -=- 0 __
+wile [ 8n > 0 ] {
+dig -=- 8n  % 10 __
+ rez  +-=- dig __
+8n /-=- 10 __
+}
+printo  [ "The sum of the digits is:  , rez ] __
