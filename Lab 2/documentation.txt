@@ -1,0 +1,10 @@
+Lab 2
+
+The symbol table implemented contains:
+	- it has a size as its field and the list of elements that is represented as a HashMap
+	- in the HashMap, the key is the index of each elements in the table and the value represents the bucket of elements
+	- in the constructor we initialize the corresponding size and the HashMap. Each value is represented as a list of objects
+	(in the bucket corresponding to each element, is the position on which it appears)
+	 - hashFunction computes the hash function by summing the ascii codes from the string
+	- the find function returns the position of an element in its bucket
+	- add returns the result of the hashFunction if the element already exists or puts it in the bucket if it doesn't
