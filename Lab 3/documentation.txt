@@ -1,0 +1,21 @@
+Lab 3
+
+Regarding the tables, in addition to the symbol table created for the previous laboratory, now there is 
+also the PIF table which has its own class.
+
+The PIF class has a symbol table and a list of pairs. Each pair is a string, which is the element from the
+code and another pair consisting of two integers. That two integers represent the reference in the symbol 
+table.
+
+For reading and writing from a file we have three functions that get content from the initial files and 
+other two which write to the files regarding the PIF table and Symbol table.
+
+In the Scanner folder are three classes. In the Validation class we check what type is a word. It can be 
+an identifier, a constant or a reserved word. To check if it’s an identifier, first it must not appear in 
+the reserved words and characters list and then to be in a correct form. The correct form is checked with 
+regex. Similarly, we check if it’s a constant: verify it’s not in the reserved list check if it’s the 
+word “true” or “false” and then validate its type. It can be a number, a string or a char.
+
+The Scanner class has one function that verifies and adds the tokens to the PIF and the Symbol Table. 
+It does that by checking every token its type and based on that it adds it where it should be. 
+If the token is not an identifier, or a constant, or a reserved word then an error it is shown.
