@@ -1,6 +1,0 @@
-non-terminals:S A
-terminals:a b
-starting symbol:S
-productions:
-S-a Aa
-A-a Aa | b Aa | a | b

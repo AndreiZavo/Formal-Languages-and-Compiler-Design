@@ -1,0 +1,14 @@
+Documentation Lab 4
+
+	Readwrite class: 
+		- has a class that reads a file line by line as strings and returns a list with all of them
+	FiniteAutomata class: 
+		- we use lists for the set of states, alphabet, final states and a map for transitions
+		- in the constructor we use a function that formats a specific line of the file to initialise the elements mentioned above
+		  exception makes the function for the transitions map in which we use a different function
+		- getters for the set of states, alphabet, final states and transitions
+		- the checkIfFinalState() function checks if a state is a final state or not
+		- the checkIfDFA() function validates if there is a key that has no value associeted with it
+		- the checkIfFAIsValid() function validates if a certain input is valid for the set of transitions given
+ 	Main class:
+		- we have a menu with which a user can do the operations needed

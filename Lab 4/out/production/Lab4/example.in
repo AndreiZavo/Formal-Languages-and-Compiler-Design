@@ -1,0 +1,11 @@
+initial state:P Q R
+alphabet:0 1
+q0:P
+final state:P R
+transition:
+(P,0) => P
+(P,1) => R
+(Q,0) => Q
+(Q,1) => P
+(R,0) => R
+(R,1) => Q
